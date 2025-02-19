@@ -1,11 +1,19 @@
-export interface ITile {
+import Phaser from "phaser";
+
+export interface GridCell {
     x: number;
     y: number;
-    type: 'path' | 'tower' | 'empty';
+    occupied: boolean;
+    type: 'empty' | 'path' | 'mage';
 }
 
-export interface IGameState {
-    gold: number;
-    wave: number;
-    lives: number;
+export interface PathPoint {
+    x: number;
+    y: number;
+}
+
+export interface Mage {
+    sprite: Phaser.GameObjects.Sprite;
+    gridX: number;
+    gridY: number;
 }

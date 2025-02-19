@@ -1,17 +1,17 @@
 {
-  "name": "td-game",
+  "name": "tower-defense",
   "version": "1.0.0",
-  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development",
-    "dev": "webpack serve --mode development --open"
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "copy-webpack-plugin": "^12.0.2"
+    "typescript": "^5.0.0",
+    "ts-loader": "^9.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.0.0",
+    "phaser": "^3.55.2",
+    "@types/phaser": "^3.55.0"
   }
 }
